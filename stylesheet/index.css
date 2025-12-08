@@ -1,0 +1,13 @@
+@import url("./utility-class.css");
+
+:root {
+    
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
