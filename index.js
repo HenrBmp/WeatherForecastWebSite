@@ -12,9 +12,13 @@ navigator.geolocation.getCurrentPosition(
         // APLICANDO INFORMAÇÕES NA TELA
         const CITY = document.getElementById("city-name");
         const TEMP = document.getElementById("temperatura");
+        const MIN_TEMP = document.getElementById("temp-minima");
+        const MAX_TEMP = document.getElementById("temp-maxima");
 
         CITY.innerHTML = DATA.name;
         TEMP.innerHTML = DATA.main.temp;
+        MIN_TEMP.innerHTML = DATA.main.temp_min;
+        MAX_TEMP.innerHTML = DATA.main.temp_max;
     },
     function error(err) {
         // TRATAMENTO DE ERRO
