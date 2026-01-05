@@ -9,10 +9,29 @@
 <body>
     <div id="root">
         <main>
-            <span id="city-name">Mauá</span>
-            <span id="temperatura" class="celsius">24</span>
-            <span id="temp-maxima" class="celsius">1</span>
-            <span id="temp-minima" class="celsius">100</span>
+            <div id="city-name"><!-- Nome da cidade, inserido pelo js --></div>
+            
+            <div id="now">
+                <div id="temperatura" class="celsius"><!-- temperatura atual, inserido pelo js --></div>
+                <div id="sensacao" class="celsius"><!-- sensacao termica, inserido pelo js --></div>
+            </div>
+
+            <div id="desc">
+                <span id="descricao"></span>
+                <img id="forecast-icon">
+            </div>
+
+            <div id="minmax">
+                <div id="temp-maxima" class="celsius"><!-- temperatura maxima, inserido pelo js --></div>
+                <div id="temp-minima" class="celsius"><!-- temperatura minima, inserido pelo js --></div>
+            </div>
+
+            <div id="others-info">
+                <div id="humidade"><!-- humidade do ar, inserido pelo js --></div>
+                <div id="vento-vel"><!-- velocidade do vento, inserido pelo js --></div>
+            </div>
+
+            <img src='./src/GIF/loading.gif' id='loader'>
         </main>
     </div>
     <script type="module" src="./index.js"></script>
