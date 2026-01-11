@@ -1,7 +1,3 @@
-.celsius::after {
-    content: "ºC";
-}
-
 #root {
     display: flex;
     justify-content: center;
@@ -21,10 +17,12 @@ main {
 }
 
 #loader {
-    position: absolute;
-    top: calc(50% - 24px); left: calc(50% - 24px);
+    /* position: absolute; */
+    /* top: calc(50% - 24px); left: calc(50% - 24px); */
     aspect-ratio: 1 / 1;
     max-width: 48px;
+    display: block;
+    margin-inline: auto;
 }
 
 #forecast-icon {
@@ -38,9 +36,18 @@ main {
     justify-content: space-evenly;
 }
 
+#minmax > * {
+    display: inline-flex;
+}
+
 #desc {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.svg_arrow {
+    height: 28px; width: 28px;
+    fill: #1e1e1e;
 }
