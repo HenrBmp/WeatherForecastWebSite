@@ -32,8 +32,6 @@ main {
 
 #minmax {
     width: 100%;
-    display: flex;
-    flex-direction: row;
 }
 
 #minmax > * {
@@ -41,12 +39,18 @@ main {
 }
 
 #minmax, #others-info {
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+}
+
+#city {
+    margin-bottom: 1rem;
 }
 
 #desc {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }

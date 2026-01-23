@@ -36,7 +36,7 @@ navigator.geolocation.getCurrentPosition(
         ICON.setAttribute("id", "forecast-icon");
 
         const DESC_BOX = document.createElement("div");
-        DESC.setAttribute("id", "desc");
+        DESC_BOX.setAttribute("id", "desc");
         [DESC, ICON].forEach(
             e => DESC_BOX.appendChild(e)
         );
@@ -64,10 +64,13 @@ navigator.geolocation.getCurrentPosition(
         [HUMIDADE, WIND].forEach(
             e => OTHERS_BOX.appendChild(e)
         );
-        
+
         // TRADUZINDO A DESCRICAO
+        // NAO FUNCIONAL, ENCONTRAR OUTRO METODO DE TRADUCAO
         const DESC_EN = DATA.weather[0].description;
         const DESC_PT = await translateText(DESC_EN);
+        
+
 
         // SETA PARA A TEMPERATURA MINIMA
         const DOWN_ARROW = document.createElementNS("http://www.w3.org/2000/svg", "svg");
